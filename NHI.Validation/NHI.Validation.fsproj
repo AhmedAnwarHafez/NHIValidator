@@ -57,6 +57,7 @@
     <Compile Include="Validation.fs" />
     <None Include="ValidationTests.fsx" />
     <Content Include="packages.config" />
+    <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />
