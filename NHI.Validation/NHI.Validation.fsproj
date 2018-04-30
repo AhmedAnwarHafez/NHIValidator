@@ -8,7 +8,7 @@
     <ProjectGuid>40f3e332-698f-4761-9f60-58d58d10dff4</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>NHI.Validation</RootNamespace>
-    <AssemblyName>NHI.Validation</AssemblyName>
+    <AssemblyName>NHI</AssemblyName>
     <UseStandardResourceNames>true</UseStandardResourceNames>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <TargetFSharpCoreVersion>4.4.3.0</TargetFSharpCoreVersion>
