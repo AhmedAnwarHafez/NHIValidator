@@ -24,3 +24,6 @@ let ``A list with more than seven chars should return false`` =
 
 let ``A list with a non alpha numeric should return false`` = 
     validate "#$%^&*()"
+
+let ``n null value should return false`` = 
+    validate null

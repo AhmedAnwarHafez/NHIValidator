@@ -30,10 +30,11 @@ let tryCheckDigit checksum : int option =
 
 let validate input = 
     let result = maybe {
-        let! checksum = tryChecksum input
-        let! digit = tryCheckDigit checksum
-        let! lastchar = tryGetLastChar input
-        let! lastCharValue = tryCharToInt lastchar
+        let! input'         = Option.ofObj input    // lift the value into Option
+        let! checksum       = tryChecksum input'    
+        let! digit          = tryCheckDigit checksum
+        let! lastchar       = tryGetLastChar input'
+        let! lastCharValue  = tryCharToInt lastchar
         return lastCharValue = digit
     }
     match result with
